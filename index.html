@@ -4,7 +4,7 @@
     <title>gemanepa | Socket.IO chat</title>
     <style>
       * { margin: 0; padding: 0; box-sizing: border-box; }
-      body { font: 13px Helvetica, Arial; background-color: lightblue}
+      body { font: 13px Helvetica, Arial; min-height: 100vh; background-size: cover; background: linear-gradient(37deg, rgb(32, 218, 233),rgb(40, 21, 236))}
       h1 {
         color: darkred;
         font-size: 3em;
@@ -17,8 +17,9 @@
       form button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 10px; height: 5.25vh}
       #messages { list-style-type: none; margin: 0; padding: 0; }
       #messages li { padding: 5px 10px; font-size: 3em;}
-      #messages li:nth-child(odd) { background: #eee; }
+      #messages li:nth-child(odd) { background: rgb(238, 238, 238, 0.25); }
       #messages { margin-bottom: 40px }
+      #developer { position: fixed; bottom: 7.5%; left: 90.35%;}
     </style>
   </head>
   <body>
@@ -28,6 +29,8 @@
       Then write something and press "Send" ◕‿↼
     </h1>
     <ul id="messages"></ul>
+    <!-- <img id="developer" src="./logo.png"> -->
+    <h4 id="developer">By gemanepa.com</h4>
     <form action="">
       <input id="m" autocomplete="off" /><button>Send</button>
     </form>
