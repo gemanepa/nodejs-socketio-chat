@@ -19,7 +19,19 @@
       #messages li { padding: 5px 10px; font-size: 3em;}
       #messages li:nth-child(odd) { background: rgb(238, 238, 238, 0.25); }
       #messages { margin-bottom: 40px }
-      #developer { position: fixed; bottom: 7.5%; left: 90.35%;}
+      #developer { position: fixed; top: 0.5%; left: 89%; width: 10%; height: auto;}
+      
+      @media screen and (max-width: 1199px) {
+        #developer {
+          top: 86%
+        }
+        h1 {
+          font-size: 3.35em;
+        }
+        form input {font-size: 400%; margin: auto; height: 100%; width: 80%;margin-bottom: 0px; padding-bottom: 0px; border-bottom: 0px;; margin-right: 0%;}
+        form button {height: 106%; width: 20%; padding: 0; margin: 0; border: 0; font-size: 400%;}
+        form {background: transparent; padding: 0px; height: 8vh;}
+      }
     </style>
   </head>
   <body>
@@ -29,8 +41,7 @@
       Then write something and press "Send" ◕‿↼
     </h1>
     <ul id="messages"></ul>
-    <!-- <img id="developer" src="./logo.png"> -->
-    <h4 id="developer">By gemanepa.com</h4>
+    <img id="developer" alt="By gemanepa.com" src="https://i.postimg.cc/W1LZbSkf/logo.png">
     <form action="">
       <input id="m" autocomplete="off" /><button>Send</button>
     </form>
